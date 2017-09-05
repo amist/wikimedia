@@ -82,7 +82,7 @@ ORDER BY ?start_date
 
 
     def plot_graph(self):
-        timeline = ps.create_timeline()
+        timeline = self.create_timeline()
         #print(timeline)
         #x = [datetime.datetime.strptime(s[0], '%Y-%m-%dT%H:%M:%SZ') for s in timeline]
         x = [s[0] for s in timeline]
